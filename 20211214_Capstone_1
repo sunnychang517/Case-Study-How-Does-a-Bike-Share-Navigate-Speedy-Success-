@@ -1,0 +1,155 @@
+jun_2021 = read.csv(file="~/Desktop/Google Certs/202106-divvy-tripdata_process.csv", head = TRUE)
+dec_2020 = read.csv(file="~/Desktop/Google Certs/202012-divvy-tripdata_process.csv", head = TRUE)
+jan_2021 = read.csv(file="~/Desktop/Google Certs/202101-divvy-tripdata_process.csv", head = TRUE)
+feb_2021 = read.csv(file="~/Desktop/Google Certs/202102-divvy-tripdata_process.csv", head = TRUE)
+mar_2021 = read.csv(file="~/Desktop/Google Certs/202103-divvy-tripdata_process.csv", head = TRUE)
+apr_2021 = read.csv(file="~/Desktop/Google Certs/202104-divvy-tripdata_process.csv", head = TRUE)
+may_2021 = read.csv(file="~/Desktop/Google Certs/202105-divvy-tripdata_process.csv", head = TRUE)
+jul_2021 = read.csv(file="~/Desktop/Google Certs/202107-divvy-tripdata_process.csv", head = TRUE)
+aug_2021 = read.csv(file="~/Desktop/Google Certs/202108-divvy-tripdata_process.csv", head = TRUE)
+sep_2021 = read.csv(file="~/Desktop/Google Certs/202109-divvy-tripdata_process.csv", head = TRUE)
+oct_2021 = read.csv(file="~/Desktop/Google Certs/202110-divvy-tripdata_process.csv", head = TRUE)
+nov_2021 = read.csv(file="~/Desktop/Google Certs/202111-divvy-tripdata_process.csv", head = TRUE)
+
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+
+str(dec_2020)
+str(jan_2021)
+str(feb_2021)
+str(mar_2021)
+str(apr_2021)
+str(may_2021)
+str(jun_2021)
+str(jul_2021)
+str(aug_2021)
+str(sep_2021)
+str(oct_2021)
+str(nov_2021)
+
+summary(dec_2020)
+
+View(dec_2020)
+View(jan_2021)
+table(is.na(jan_2021$end_station_id))
+table(is.na(dec_2020))
+table(is.na(jan_2021))
+table(is.na(feb_2021))
+
+df = rbind(dec_2020, jan_2021, feb_2021, mar_2021, apr_2021, may_2021, jun_2021, jul_2021, aug_2021, sep_2021, oct_2021, nov_2021)
+table(is.na(df))
+(40591/82236899)*100
+
+df_1 <- subset(df,select = -c(9,10,11,12))
+
+df_1clean <- df_1 %>% 
+  na_if("") %>%
+  na.omit
+
+View(df_1clean)
+
+#Analyze:
+table(df_1clean$day_of_week) #mode,max:Saturday, min:Monday
+table(df_1clean$member_casual)
+options(scipen=999)
+sort(table(df_1clean$start_station_id),decreasing=TRUE)[1:15]
+
+df_1clean %>% #Streeter Dr & Grand Ave, 63769 Casual, Rank 1 
+  group_by(member_casual, start_station_name) %>%
+  filter(start_station_id == 13022) %>%
+  count(member_casual)
+  
+df_1clean %>% #Lake Shore Dr & North Blvd, 28661 Casual, Rank 4
+  group_by(member_casual, start_station_name) %>%
+  filter(start_station_id == "LF-005") %>%
+  count(member_casual)
+14144+14517
+
+df_1clean %>% #Lake Shore Dr & Monroe St, 34147 Casual, Rank 2
+  group_by(member_casual, start_station_name) %>%
+  filter(start_station_id == 13300) %>%
+  count(member_casual)
+14723+19424
+
+df_1clean %>% #Michigan Ave & Oak St, 28557 Casual, Rank 5
+  group_by(member_casual, start_station_name) %>%
+  filter(start_station_id == 13042) %>%
+  count(member_casual)
+
+df_1clean %>% #Wells St & Concord Ln, 18722 Casual, but more members than casual, Rank 7
+  group_by(member_casual, start_station_name) %>%
+  filter(start_station_id == "TA1308000050") %>%
+  count(member_casual)
+  
+df_1clean %>% #Millennium Park, 31791 Casual, Rank 3
+  group_by(member_casual, start_station_name) %>%
+  filter(start_station_id == "13008") %>%
+  count(member_casual)
+
+df_1clean %>% #Clark St & Elm St, 15500, more members than casual, Rank 9
+  group_by(member_casual, start_station_name) %>%
+  filter(start_station_id == "TA1307000039") %>%
+  count(member_casual)
+
+df_1clean %>% #Theater on the Lake, 20601 Casual, Rank 6
+  group_by(member_casual, start_station_name) %>%
+  filter(start_station_id == "TA1308000001") %>%
+  count(member_casual)
+
+df_1clean %>% #Wells St & Elm St, 15708 Casual, more members than casual, Rank 8
+  group_by(member_casual, start_station_name) %>%
+  filter(start_station_id == "KA1504000135") %>%
+  count(member_casual)
+
+df_1clean %>% #Clark St & Armitage Ave, 15306 Casual, more members than casual, Rank 10
+  group_by(member_casual, start_station_name) %>%
+  filter(start_station_id == 13146) %>%
+  count(member_casual)
+
+df_1clean %>% #Kingsbury St & Kinzie St, 9370 Casual, more members than casual
+  group_by(member_casual, start_station_name) %>%
+  filter(start_station_id == "KA1503000043") %>%
+  count(member_casual)
+
+df_1clean %>% #Wells St & Elm St, 15195 Casual
+  group_by(member_casual, start_station_name) %>%
+  filter(start_station_id == "TA1307000117") %>%
+  count(member_casual)
+
+df_1clean %>% #Dearborn St & Erie St, 11834 Casual, more members than casual
+  group_by(member_casual, start_station_name) %>%
+  filter(start_station_id == 13045 ) %>%
+  count(member_casual)
+
+df_1clean %>% #Wells St & Huron St, 11590 Casual, more members than casual
+  group_by(member_casual, start_station_name) %>%
+  filter(start_station_id == "TA1306000012") %>%
+  count(member_casual)
+
+#Top 10
+places = c('Streeter Dr & Grand Ave', 'Lake Shore Dr & Monroe St', 'Millennium Park', 'Lake Shore Dr & North Blvd', 'Michigan Ave & Oak St', 'Theater on the Lake', 'Wells St & Concord Ln', 'Wells St & Elm St', 'Clark St & Elm St', "Clark St & Armitage Ave")
+count_casual = c("63769", "34147", "31791", "28661", "28557", "20601", "18722", "15708", "15500", "15306")
+results = data.frame(places, count_casual)
+results
+
+results %>%
+  gather(key = metric, value = values,2)%>%
+  ggplot(aes(x=places, y=values))+
+  geom_bar(stat='identity', fill='purple')+
+  facet_grid(metric~., scales = 'free_y')
+
+#1 = Casual, 2 = Member
+df_1clean <- df_1clean %>% 
+  mutate(num_member_casual = case_when(
+    member_casual == "casual" ~ 1,
+    member_casual == "member" ~ 2
+))
+
+ggplot(data=df_1clean)+
+  geom_bar(mapping=aes(x=member_casual))
+
+ggplot(data=df_1clean)+
+  geom_bar(mapping=aes(x=rideable_type, fill=member_casual))
+  
+
