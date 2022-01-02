@@ -127,29 +127,3 @@ df_1clean %>% #Wells St & Huron St, 11590 Casual, more members than casual
   filter(start_station_id == "TA1306000012") %>%
   count(member_casual)
 
-#Top 10
-places = c('Streeter Dr & Grand Ave', 'Lake Shore Dr & Monroe St', 'Millennium Park', 'Lake Shore Dr & North Blvd', 'Michigan Ave & Oak St', 'Theater on the Lake', 'Wells St & Concord Ln', 'Wells St & Elm St', 'Clark St & Elm St', "Clark St & Armitage Ave")
-count_casual = c("63769", "34147", "31791", "28661", "28557", "20601", "18722", "15708", "15500", "15306")
-results = data.frame(places, count_casual)
-results
-
-results %>%
-  gather(key = metric, value = values,2)%>%
-  ggplot(aes(x=places, y=values))+
-  geom_bar(stat='identity', fill='purple')+
-  facet_grid(metric~., scales = 'free_y')
-
-#1 = Casual, 2 = Member
-df_1clean <- df_1clean %>% 
-  mutate(num_member_casual = case_when(
-    member_casual == "casual" ~ 1,
-    member_casual == "member" ~ 2
-))
-
-ggplot(data=df_1clean)+
-  geom_bar(mapping=aes(x=member_casual))
-
-ggplot(data=df_1clean)+
-  geom_bar(mapping=aes(x=rideable_type, fill=member_casual))
-  
-
