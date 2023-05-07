@@ -3,7 +3,7 @@
 [Technology Used](https://github.com/sunnychang517/Case-Study-How-Does-a-Bike-Share-Navigate-Speedy-Success-/tree/main#introduction) </br>
 [Introduction](https://github.com/sunnychang517/Case-Study-How-Does-a-Bike-Share-Navigate-Speedy-Success-/tree/main#introduction-1) </br>
 [My Case Study Roadmap](https://github.com/sunnychang517/Case-Study-How-Does-a-Bike-Share-Navigate-Speedy-Success-/tree/main#my-case-study-roadmap) </br>
-[Code Preview](https://github.com/sunnychang517/Case-Study-How-Does-a-Bike-Share-Navigate-Speedy-Success-/blob/main/20211214_Capstone_1) </br>
+[Code Preview](https://github.com/sunnychang517/Case-Study-How-Does-a-Bike-Share-Navigate-Speedy-Success-/blob/main/README.md#code-preview) </br>
 [Data Visualizations](https://github.com/sunnychang517/Case-Study-How-Does-a-Bike-Share-Navigate-Speedy-Success-/tree/main#data-visualizations) </br>
 [Conclusion](https://github.com/sunnychang517/Case-Study-How-Does-a-Bike-Share-Navigate-Speedy-Success-/tree/main#conclusion) </br>
 [Acknowledgement](https://github.com/sunnychang517/Case-Study-How-Does-a-Bike-Share-Navigate-Speedy-Success-/tree/main#acknowledgement) </br>
