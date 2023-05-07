@@ -58,7 +58,7 @@ where riders use our services the most.
 Offer deals on classic bikes and then convert them to be an annual member which
 is a good incentive. Send notifications on their phone, post in social media on
 Saturdays. Target population for our marketing campaign is the casual members in
-the top 10 locations of where riders use our service the most.
+the top 10 locations of where riders use our services the most.
 
 ## Acknowledgement: 
 This code was made to enhance my understanding with R outside of the classroom. This project helps me build up my criticial thinking, problem-solving, and programming skills. </br>
