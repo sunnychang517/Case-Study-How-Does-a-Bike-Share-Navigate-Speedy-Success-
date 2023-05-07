@@ -3,6 +3,7 @@
 [Technology Used](https://github.com/sunnychang517/Case-Study-How-Does-a-Bike-Share-Navigate-Speedy-Success-/tree/main#introduction) </br>
 [Introduction](https://github.com/sunnychang517/Case-Study-How-Does-a-Bike-Share-Navigate-Speedy-Success-/tree/main#introduction-1) </br>
 [My Case Study Roadmap](https://github.com/sunnychang517/Case-Study-How-Does-a-Bike-Share-Navigate-Speedy-Success-/tree/main#my-case-study-roadmap) </br>
+[Code Preview](https://github.com/sunnychang517/Case-Study-How-Does-a-Bike-Share-Navigate-Speedy-Success-/blob/main/20211214_Capstone_1) </br>
 [Data Visualizations](https://github.com/sunnychang517/Case-Study-How-Does-a-Bike-Share-Navigate-Speedy-Success-/tree/main#data-visualizations) </br>
 [Conclusion](https://github.com/sunnychang517/Case-Study-How-Does-a-Bike-Share-Navigate-Speedy-Success-/tree/main#conclusion) </br>
 [Acknowledgement](https://github.com/sunnychang517/Case-Study-How-Does-a-Bike-Share-Navigate-Speedy-Success-/tree/main#acknowledgement) </br>
@@ -38,6 +39,9 @@ Based on the case study roadmap, what marketing strategies can help us elevate c
 
 <h5>More Riders with Membership Than Casual Riders</h5>
 <img src="https://user-images.githubusercontent.com/54777897/236650182-56eb7502-56af-4989-b17a-d3ceb9805460.png" width="500" height="500" />
+
+## Code Preview:
+[Code](https://github.com/sunnychang517/Case-Study-How-Does-a-Bike-Share-Navigate-Speedy-Success-/blob/main/20211214_Capstone_1)
 
 ## Conclusion: 
 Saturdays have the maximum of bicycle sessions within the span of 12
