@@ -1,11 +1,11 @@
 # Case Study: How Does a Bike Share Navigate Speedy Success?
-# Table of Contents:
-## [Technology Used]
-## [Introduction]
-[Preview of My Case Study Roadmap]
-[Data Visualizations]
-[Conclusion]
-[Acknowledgement]
+## Table of Contents:
+[Technology Used](https://github.com/sunnychang517/Case-Study-How-Does-a-Bike-Share-Navigate-Speedy-Success-/tree/main#introduction) </br>
+[Introduction](https://github.com/sunnychang517/Case-Study-How-Does-a-Bike-Share-Navigate-Speedy-Success-/tree/main#introduction-1) </br>
+[My Case Study Roadmap](https://github.com/sunnychang517/Case-Study-How-Does-a-Bike-Share-Navigate-Speedy-Success-/tree/main#my-case-study-roadmap) </br>
+[Data Visualizations](https://github.com/sunnychang517/Case-Study-How-Does-a-Bike-Share-Navigate-Speedy-Success-/tree/main#data-visualizations) </br>
+[Conclusion](https://github.com/sunnychang517/Case-Study-How-Does-a-Bike-Share-Navigate-Speedy-Success-/tree/main#conclusion) </br>
+[Acknowledgement](https://github.com/sunnychang517/Case-Study-How-Does-a-Bike-Share-Navigate-Speedy-Success-/tree/main#acknowledgement) </br>
 
 ## Technology Used: 
 + R
@@ -17,21 +17,21 @@ Based on the case study roadmap, what marketing strategies can help us elevate c
 [Case Study 1 Roadmap Preview.pdf](https://github.com/sunnychang517/Case-Study-How-Does-a-Bike-Share-Navigate-Speedy-Success-/blob/main/Case%20Study%201%20Roadmap%20Preview.pdf)
 
 ## Data Visualizations:
-<br>Total count of Bicyle Sessions in a Year Per Week Day </br>
+<h5>Total Count of Bicyle Sessions in a Year Per Week Day </h5>
 
 <img width="416" alt="Daysofweek_count_bicycle_sessions" src="https://user-images.githubusercontent.com/54777897/236651784-de3d2593-e867-49b2-bcac-4a413fdd20f9.png">
 
-<br>Top 10 Locations of Where Casual Riders use our Services the Most</br>
+<h5>Top 10 Locations of Where Casual Riders use our Services the Most</h5>
 <img width="500" alt="Top_10_Places" src="https://user-images.githubusercontent.com/54777897/236650582-8bef58de-5179-47e8-8c53-b604359867dc.png">
 
-<br>Many Bicyclists Prefer Riding Classic Bikes</br>
+<h5>Many Bicyclists Prefer Riding Classic Bikes</h5>
 ![CasualVSMembers_Bike_Preference png](https://user-images.githubusercontent.com/54777897/236650950-093452c9-61b8-4cef-b13b-c55c7d0b9c80.png)
 
-<br>More Riders with Membership Than Casual Riders</br>
+<h5>More Riders with Membership Than Casual Riders</h5>
 <img src="https://user-images.githubusercontent.com/54777897/236650182-56eb7502-56af-4989-b17a-d3ceb9805460.png" width="500" height="500" />
 
 ## Conclusion: 
-Saturday has the maximum and mode of bicycle sessions within the span of 12
+Saturdays have the maximum of bicycle sessions within the span of 12
 months. For marketing purposes, we can promote and incentivize users to use our
 service on Saturdays with sending notifications on their phone, post in social media.
 Since, classic bikes for both groups outnumbered docked and electric bikes even if
