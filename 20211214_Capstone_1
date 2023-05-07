@@ -11,10 +11,6 @@ sep_2021 = read.csv(file="~/Desktop/Google Certs/202109-divvy-tripdata_process.c
 oct_2021 = read.csv(file="~/Desktop/Google Certs/202110-divvy-tripdata_process.csv", head = TRUE)
 nov_2021 = read.csv(file="~/Desktop/Google Certs/202111-divvy-tripdata_process.csv", head = TRUE)
 
-library(dplyr)
-library(tidyr)
-library(ggplot2)
-
 str(dec_2020)
 str(jan_2021)
 str(feb_2021)
@@ -37,7 +33,7 @@ table(is.na(dec_2020))
 table(is.na(jan_2021))
 table(is.na(feb_2021))
 
-df = *join tables here*(dec_2020, jan_2021, feb_2021, mar_2021, apr_2021, may_2021, jun_2021, jul_2021, aug_2021, sep_2021, oct_2021, nov_2021)
+df = *join tables here*
 table(is.na(df))
 (40591/82236899)*100
 
