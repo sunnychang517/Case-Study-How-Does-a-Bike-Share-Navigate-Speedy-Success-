@@ -18,14 +18,22 @@ Based on the case study roadmap, what marketing strategies can help us elevate c
 
 ## Data Visualizations:
 <h5>Total Count of Bicyle Sessions in a Year Per Week Day </h5>
-
 <img width="416" alt="Daysofweek_count_bicycle_sessions" src="https://user-images.githubusercontent.com/54777897/236651784-de3d2593-e867-49b2-bcac-4a413fdd20f9.png">
+|Number|Day|
+|:-------:|:-------:|
+|1|Sunday|
+|2|Monday|
+|3|Tuesday|
+|4|Wednesday|
+|5|Thursday|
+|6|Friday|
+|7|Saturday|
 
 <h5>Top 10 Locations of Where Casual Riders use our Services the Most</h5>
 <img width="500" alt="Top_10_Places" src="https://user-images.githubusercontent.com/54777897/236650582-8bef58de-5179-47e8-8c53-b604359867dc.png">
 
 <h5>Many Bicyclists Prefer Riding Classic Bikes</h5>
-![CasualVSMembers_Bike_Preference png](https://user-images.githubusercontent.com/54777897/236650950-093452c9-61b8-4cef-b13b-c55c7d0b9c80.png)
+<img src="https://user-images.githubusercontent.com/54777897/236652426-e9a94327-83e1-4993-9064-e9066f767398.png")
 
 <h5>More Riders with Membership Than Casual Riders</h5>
 <img src="https://user-images.githubusercontent.com/54777897/236650182-56eb7502-56af-4989-b17a-d3ceb9805460.png" width="500" height="500" />
