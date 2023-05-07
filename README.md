@@ -19,6 +19,7 @@ Based on the case study roadmap, what marketing strategies can help us elevate c
 ## Data Visualizations:
 <h5>Total Count of Bicyle Sessions in a Year Per Week Day </h5>
 <img width="416" alt="Daysofweek_count_bicycle_sessions" src="https://user-images.githubusercontent.com/54777897/236651784-de3d2593-e867-49b2-bcac-4a413fdd20f9.png">
+
 |Number|Day|
 |:-------:|:-------:|
 |1|Sunday|
